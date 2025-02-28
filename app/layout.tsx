@@ -20,6 +20,10 @@ export default function RootLayout({
   return (
     <html lang="de" className="dark scroll-smooth">
       <head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
         <style
           dangerouslySetInnerHTML={{
             __html: `
@@ -31,6 +35,9 @@ export default function RootLayout({
           
           body {
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+            box-sizing: border-box;
           }
           
           section {
